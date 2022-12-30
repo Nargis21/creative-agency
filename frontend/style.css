@@ -1,0 +1,33 @@
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.bgColor1{
+    background-color: #FBD062;
+}
+button{
+    background-color: #111430;
+    color: white;
+    padding: 12px 35px;
+    border: none;
+    border-radius: 6px;
+}
+.bannerHeading{
+    color: #111430;
+    font-size: 40px;
+}
+.sliderSection{
+    background-color: #111430;
+}
+.serviceCard div:hover{
+    box-shadow: 0 6px 6px rgba(0,0,0,0.2);;
+}
+.textCol{
+    color: #111430;
+}
+.textCol1{
+    color:#FBD062;
+}
+.reviewImage{
+    height: 100px;
+    width: 100px;
+}
