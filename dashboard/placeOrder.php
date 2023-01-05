@@ -32,7 +32,7 @@ $services = mysqli_query($db_connect, $get_services);
                     <?php endif ?>
                     <div class="form-outline mb-4 ">
                         <label class="form-label" for="form3Example3">Your name/ Company's name</label>
-                        <input name="customerName" type="text" id="form3Example3" class="form-control " />
+                        <input name="customerName" value="<?php if(isset($_POST['customerName'])){ echo $_POST['customerName'];} ?>" type="text" id="form3Example3" class="form-control " />
                     </div>
                     <div class="form-outline mb-4">
                         <label class="form-label" for="form3Example4">Your Email Address</label>

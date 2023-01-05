@@ -120,3 +120,24 @@ $services = mysqli_query($db_connect, $get_services);
         })
       })
     </script>
+    <script>
+      $(document).ready(function() {
+    const Toast = Swal.mixin({
+          toast: true,
+          position: 'top-end',
+          showConfirmButton: false,
+          timer: 3000,
+          timerProgressBar: true,
+          didOpen: (toast) => {
+            toast.addEventListener('mouseenter', Swal.stopTimer)
+            toast.addEventListener('mouseleave', Swal.resumeTimer)
+          }
+        })
+        <?php if(isset($_SESSION['approvedOrder'])):?>
+        Toast.fire({
+          icon: 'info',
+          title: 'You have Success'
+        })
+        <?php endif; ?>
+      })
+  </script>

@@ -18,7 +18,6 @@ $assoc_service = mysqli_fetch_assoc($service);
         <input type="hidden" value="<?= $assoc_service['id']; ?>" name="id">
 
         <!-- Show shoe form error message -->
-        <!-- Show shoe form error message -->
         <?php
         if (isset($_SESSION['serviceFormError'])) : ?>
             <p class="text-danger text-center">

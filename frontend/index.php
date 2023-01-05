@@ -5,7 +5,7 @@ require_once "includes/header.php";
 
 <body>
     <header class="slide-gap">
-        <nav class="banner-margin navbar bgColor1 navbar-expand-lg ">
+        <nav class="banner-margin navbar bgColor1 navbar-expand-lg fixed-top shadow">
             <div class="container d-flex justify-content-between align-items-center">
                 <a class="navbar-brand " href="index.php">
                     <img width="150px" src="images/logos/logo.png" alt="">
@@ -50,8 +50,8 @@ require_once "includes/header.php";
             </div>
         </nav>
     </header>
-    <main class="bgColor1 py-5">
-        <section class="container py-5">
+    <main class="bgColor1 py-5 mt-5">
+        <section class="container py-5 mt-5">
             <div class="row gy-5">
                 <div class="col-lg-5 col-md-12 col-12 pe-5 ">
                     <h1 class="fw-bold lh-base bannerHeading">Let's Grow Your <br> Brand To The <br> Next Level</h1>
@@ -105,3 +105,17 @@ require_once "includes/header.php";
 </body>
 
 </html>
+
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/6396ad61daff0e1306dc2bc2/1gk29aibl';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->

@@ -14,8 +14,8 @@ $reviews = mysqli_query($db_connect, $get_reviews);
         ?>
             <div class="col">
                 <div class="card h-100 border-0 shadow-lg rounded-3">
-                    <div class="d-flex justify-content-center align-items-center">
-                        <img src="../dashboard/uploads/review/<?= $review['reviewer_image']; ?>" class="w-25" alt="Shoe Image">
+                    <div class="d-flex justify-content-center align-items-center pt-3">
+                        <img src="../dashboard/uploads/review/<?= $review['reviewer_image']; ?>" class="w-25 rounded" alt="Shoe Image">
                     </div>
                     <div class="card-body d-flex align-items-center flex-column">
                         <h5 class="card-title text-center textCol fw-bold">

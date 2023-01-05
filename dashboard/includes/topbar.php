@@ -22,13 +22,18 @@ $allData = mysqli_fetch_assoc($user);
         <!-- User Account -->
         <li class="dropdown user-menu">
           <button class="dropdown-toggle nav-link" data-toggle="dropdown">
-            <img src="images/user/u-xl-3.jpg" class="user-image rounded-circle" alt="User Image" />
+            <!-- <img src="images/user/u-xl-3.jpg" class="user-image rounded-circle" alt="User Image" /> -->
+            <?php if ($allData['user_image']) : ?>
+              <img height="40px" width="40px" class=" rounded-circle" src="uploads/user/<?= $allData['user_image']; ?>" alt="">
+            <?php else : ?>
+              <img  class="user-image rounded-circle" src="./images/avatar.png" alt="">
+            <?php endif; ?>
             <span class="d-none d-lg-inline-block text-black">
               <?= $allData['first_name']; ?></span>
           </button>
           <ul class="dropdown-menu dropdown-menu-right">
             <li>
-              <a class="dropdown-link-item" href="user-profile.html">
+              <a class="dropdown-link-item" href="./myProfile.php">
                 <i class="mdi mdi-account-outline"></i>
                 <span class="nav-text">My Profile</span>
               </a>

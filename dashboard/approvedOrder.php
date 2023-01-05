@@ -9,4 +9,5 @@ $updateStatus_query = "UPDATE orders SET status = 'Done' WHERE id=$id";
 $updateStatus = mysqli_query($db_connect,$updateStatus_query);
 if($updateStatus){
     header("location: manageOrder.php");
+    $_SESSION['approvedOrder'] = "Order Approved Successfully";
 }

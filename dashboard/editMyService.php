@@ -40,9 +40,9 @@ $activeServices = mysqli_query($db_connect, $get_activeServices);
         <div class="form-outline mb-4">
             <label class="form-label" for="form3Example4">Service Category</label>
             <select value="<?= $assoc_service['service_name']; ?>" name="serviceName" class="form-control">
-                <<?php
+                <?php
                     foreach ($activeServices as $activeService) :
-                    ?> <option value=" <?= $activeService['service_name']; ?>"> <?= $activeService['service_name']; ?></option>
+                    ?> <option <?php if ($assoc_service['service_name'] == $activeService['service_name']) : ?> selected <?php endif; ?> value=" <?= $activeService['service_name']; ?>"> <?= $activeService['service_name']; ?></option>
                 <?php
                     endforeach;
                 ?>

@@ -4,6 +4,7 @@ require_once "../frontend/includes/header.php";
 ?>
     <link rel="stylesheet" href="../frontend//style.css">
 
+
 <div class="w-25 mx-auto p-4 shadow-lg my-5 rounded">
   <h2 class="py-3 text-center textCol1">Login</h2>
   <form method="post" action="loginData.php" class="">
