@@ -108,7 +108,7 @@ $users = mysqli_query($db_connect, $get_users);
       $(document).ready(function() {
         $("#myTable").on('click', '.deleteBtn', function() {
           Swal.fire({
-            title: 'Are you sure want to delete this service?',
+            title: 'Are you sure want to delete this user?',
             icon: 'question',
             showCancelButton: true,
             confirmButtonColor: '#d33',

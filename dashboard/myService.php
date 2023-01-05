@@ -105,7 +105,7 @@ $services = mysqli_query($db_connect, $get_services);
       $(document).ready(function() {
         $("#myTable").on('click', '.deleteBtn', function() {
           Swal.fire({
-            title: 'Are you sure want to delete this service?',
+            title: 'Are you sure want to delete this order?',
             icon: 'question',
             showCancelButton: true,
             confirmButtonColor: '#d33',

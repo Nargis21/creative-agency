@@ -96,7 +96,7 @@ $reviews = mysqli_query($db_connect, $get_reviews);
             $(document).ready(function() {
                 $("#myTable").on('click', '.deleteBtn', function() {
                     Swal.fire({
-                        title: 'Are you sure want to delete this service?',
+                        title: 'Are you sure want to delete this review?',
                         icon: 'question',
                         showCancelButton: true,
                         confirmButtonColor: '#d33',
