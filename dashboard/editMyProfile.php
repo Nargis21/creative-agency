@@ -24,14 +24,14 @@ $assoc_user = mysqli_fetch_assoc($user);
                     <div class="row g-5">
                         <div class="text-center col-12 col-md-4 col-lg-4">
                             <?php if ($assoc_user['user_image']) : ?>
-                                <img height="200px" width="200px" class="rounded-circle" src="uploads/user/<?= $assoc_user['user_image']; ?>" alt="">
+                                <img height="200px" id="image" width="200px" class="rounded-circle" src="uploads/user/<?= $assoc_user['user_image']; ?>" alt="">
                             <?php else : ?>
-                                <img width="50%" class="rounded-circle" src="images/avatar.png" alt="">
+                                <img width="50%" id="image" class="rounded-circle" src="images/avatar.png" alt="">
                             <?php endif; ?>
                             <br>
                             <div class="form-outline mb-4">
                                 <label class="form-label pt-4 pb-1" for="form3Example3">Upload Photo</label>
-                                <input name="userImage" type="file" id="form3Example4" class="form-control" />
+                                <input name="userImage" id="fileImg" type="file" id="form3Example4" class="form-control" />
                             </div>
                             <!-- Show shoe image error message -->
                             <?php
@@ -103,3 +103,8 @@ $assoc_user = mysqli_fetch_assoc($user);
         </div>
 
         <?php require_once "includes/footer.php" ?>
+        <script>
+            document.getElementById("fileImg").onchange = function(){
+                document.getElementById("image").src = URL.createObjectURL(fileImg.files[0]);
+            }
+        </script>
